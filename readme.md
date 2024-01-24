@@ -6,8 +6,8 @@
     - On Windows, it's also recommended to be using [Clink](https://chrisant996.github.io/clink/)!
 4. Snippet for pixel perfect HTML5 rendering for HaxeFlixel. [Further reading](https://developer.mozilla.org/en-US/docs/Web/CSS/image-rendering)
     ```hx
-    		#if web
-    			// pixel perfect render fix!
-    			Application.current.window.element.style.setProperty("image-rendering", "pixelated");
-    		#end
+    #if web
+        // pixel perfect render fix!
+        Application.current.window.element.style.setProperty("image-rendering", "pixelated");
+    #end
     ```
