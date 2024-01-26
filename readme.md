@@ -11,3 +11,4 @@
         Application.current.window.element.style.setProperty("image-rendering", "pixelated");
     #end
     ```
+5. You can add `-watch` as an arg when running/testing a Lime based project, and it will auto-recompile anytime there's a file change in any of your source directories [code from lime/tools/utils/PlatformTarget.hx](https://github.com/openfl/lime/blob/9fb1817f99fea67d094d357e2b8782e6de231aac/src/lime/tools/PlatformTarget.hx#L65-L70). Each platform (CPP/HTML5/iOS) I believe they all use [`hxp.System.watch()` under the hood](https://github.com/openfl/hxp/blob/master/src/hxp/System.hx#L1354-L1401), which is NodeJS based, and seemingly directly from this Github repo https://github.com/mikeal/watch
